@@ -23,7 +23,7 @@ import axios from 'axios'
     },
     methods: {
      handleCompare(){
-         axios.get('http://127.0.0.1:8080/static/mock/compareresult.json').then(res=>{
+         axios.get('/api/compareresult.json').then(res=>{
              this.compareResult = res.data.result
              this.open5(this.compareResult)
          })

@@ -36,7 +36,7 @@ export default {
 
     methods: {
         handleGetSearch(){
-            axios.get('http://127.0.0.1:8080/static/mock/search.json').then(res=>{
+            axios.get('/api/search.json').then(res=>{
                    
                     this.faceDate = res.data.faceDate
                      console.log(this.faceDate)
